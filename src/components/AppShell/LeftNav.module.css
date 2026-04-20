@@ -1,0 +1,59 @@
+.wrap {
+  background: var(--hv-surface);
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  padding: 16px;
+  height: 734px;
+  box-sizing: border-box;
+}
+
+.section + .section {
+  margin-top: 12px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  color: var(--hv-text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 8px;
+  border-radius: 6px;
+  color: var(--hv-text-secondary);
+  font-size: 12px;
+}
+
+.itemActive {
+  background: rgba(85, 78, 241, 0.08);
+  color: var(--hv-brand);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: rgba(148, 163, 184, 0.35);
+}
+
+.itemActive .icon {
+  background: rgba(85, 78, 241, 0.35);
+}
+
+.itemLabel {
+  line-height: 18px;
+}
+

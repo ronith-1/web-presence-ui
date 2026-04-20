@@ -1,0 +1,211 @@
+.card {
+  background: var(--hv-surface);
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 796px;
+}
+
+.header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.iconTile {
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  background: rgba(85, 78, 241, 0.05);
+  display: grid;
+  place-items: center;
+}
+
+.iconMark {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(85, 78, 241, 0.95), rgba(85, 78, 241, 0.55));
+}
+
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+}
+
+.tabsBar {
+  height: 36px;
+  border-bottom: 1px solid var(--hv-border);
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tabActive {
+  height: 100%;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--hv-brand);
+}
+
+.tabDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(85, 78, 241, 0.15);
+}
+
+.tabLabel {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--hv-brand);
+}
+
+.body {
+  padding: 16px;
+}
+
+.attemptedAt {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--hv-text-secondary);
+  margin-bottom: 16px;
+}
+
+.attemptedAtLabel {
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.attemptedAtValue {
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colFixed {
+  width: 370px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionLabel {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--hv-text-secondary);
+}
+
+.inputsBox {
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.inputsTable {
+  width: 100%;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 40px;
+}
+
+.rowAlt {
+  background: #fafafc;
+}
+
+.inputCellLeft {
+  padding: 11.75px 12px 12.25px;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: var(--hv-text-primary);
+}
+
+.inputCellRight {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inputValue {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--hv-text-primary);
+  text-align: right;
+  white-space: pre-line;
+}
+
+.sectionSpacer {
+  height: 1px;
+}
+
+.uploads {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.uploadRow {
+  background: #fff;
+  border: 1px solid var(--hv-border);
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.fileType {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(20, 128, 74, 1), rgba(20, 128, 74, 1));
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 7.5px;
+  font-weight: 600;
+}
+
+.fileName {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--hv-text-tertiary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

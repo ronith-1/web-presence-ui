@@ -1,0 +1,84 @@
+.table {
+  width: 100%;
+  border: 1px solid rgba(5, 5, 82, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--hv-surface);
+}
+
+.row {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  min-height: 40px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.row:nth-child(odd) {
+  background: rgba(5, 5, 82, 0.02);
+}
+
+.row:hover {
+  background: rgba(5, 5, 82, 0.05);
+}
+
+.row:focus-visible {
+  outline: 2px solid rgba(85, 78, 241, 0.35);
+  outline-offset: -2px;
+}
+
+.cellLeft,
+.cellRight {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333;
+  font-weight: 400;
+}
+
+.cellRight {
+  justify-content: flex-end;
+  min-width: 150px;
+}
+
+.statusText {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-align: right;
+  user-select: none;
+}
+
+.statusNone {
+  color: #333;
+}
+
+.statusReview {
+  color: rgba(154, 52, 18, 1);
+}
+
+.statusDecline {
+  color: rgba(185, 28, 28, 1);
+}
+
+.statusInfo {
+  color: rgba(29, 78, 216, 1);
+}
+
+.statusPass {
+  color: rgba(5, 150, 105, 1);
+}
+

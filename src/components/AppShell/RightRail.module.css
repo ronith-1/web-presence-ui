@@ -1,0 +1,112 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: var(--hv-surface);
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.cardTitle {
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 500;
+  color: var(--hv-text-primary);
+  margin-bottom: 12px;
+}
+
+.assigneeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.35);
+}
+
+.assigneeEmail {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--hv-text-secondary);
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.statusLabel {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--hv-text-primary);
+}
+
+.statusPill {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  background: rgba(20, 128, 74, 0.12);
+  color: var(--hv-success);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.reasonTitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.reasonText {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--hv-text-secondary);
+}
+
+.commentTitle {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 600;
+  color: var(--hv-text-secondary);
+  margin-bottom: 12px;
+}
+
+.textareaWrap {
+  border: 1px solid var(--hv-border);
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 78px;
+  position: relative;
+  background: #ffffff;
+}
+
+.textareaPlaceholder {
+  font-size: 12px;
+  color: rgba(148, 163, 184, 0.9);
+}
+
+.sendIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 14px;
+  height: 14px;
+  display: grid;
+  place-items: center;
+  color: var(--hv-text-secondary);
+}
+
