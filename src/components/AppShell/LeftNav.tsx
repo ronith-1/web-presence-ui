@@ -10,16 +10,19 @@ const appDetails: NavItem[] = [
 const modulesUsed: NavItem[] = [
   { label: 'Geo IP API' },
   { label: 'Personal Details API' },
-  { label: 'Digilocker' },
+  { label: 'Digilocker API', active: true },
   { label: 'Extracts age from DOB' },
   { label: 'Additional details API' },
   { label: 'NSDL Pan verification' },
   { label: 'PAN Dedupe' },
-  { label: 'ML Screening' },
+  { label: 'AML Screening' },
   { label: 'KRA Search & Verify' },
   { label: 'Bank Account Verification' },
-  { label: 'Web Presence', active: true },
-  { label: 'eSign' },
+  { label: 'Selfie Verification' },
+  { label: 'Face Match' },
+  { label: 'Wet Signature' },
+  { label: 'Segment selection data...' },
+  { label: 'Nominee and Guardian...' },
 ]
 
 function Section({ title, items }: { title: string; items: NavItem[] }) {

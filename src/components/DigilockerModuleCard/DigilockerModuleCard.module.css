@@ -1,0 +1,373 @@
+.card {
+  background: var(--hv-surface);
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--hv-border);
+}
+
+.iconTile {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background: rgba(85, 78, 241, 0.06);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+}
+
+/* ── Tabs ── */
+.tabsBar {
+  height: 36px;
+  border-bottom: 1px solid var(--hv-border);
+  padding: 0 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tabActive {
+  height: 100%;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 2px solid var(--hv-brand);
+}
+
+.tabLabel {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--hv-brand);
+}
+
+/* ── Body ── */
+.body {
+  padding: 16px 24px 24px;
+}
+
+.attemptedAt {
+  display: flex;
+  gap: 4px;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--hv-text-secondary);
+  margin-bottom: 20px;
+}
+
+.attemptedAtLabel {
+  font-weight: 400;
+}
+
+.attemptedAtValue {
+  font-weight: 400;
+}
+
+/* ── Two-column grid ── */
+.grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.colLeft {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colRight {
+  width: 320px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Section label ── */
+.sectionLabel {
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--hv-text-secondary);
+  letter-spacing: 0.02em;
+}
+
+/* ── Document image placeholder ── */
+.docImageWrap {
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fafafa;
+  max-width: 280px;
+}
+
+.docImageInner {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.docHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.docHeaderLine {
+  height: 1px;
+  background: var(--hv-border);
+  margin-bottom: 4px;
+}
+
+.docHeaderText {
+  font-size: 9px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+}
+
+.docSubText {
+  font-size: 7px;
+  color: var(--hv-text-secondary);
+  line-height: 1.4;
+}
+
+.docBody {
+  display: flex;
+  gap: 8px;
+}
+
+.docFields {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.docFieldRow {
+  display: flex;
+  gap: 4px;
+  font-size: 7px;
+  line-height: 1.6;
+  color: var(--hv-text-primary);
+}
+
+.docFieldKey {
+  color: var(--hv-text-secondary);
+  min-width: 80px;
+  flex-shrink: 0;
+}
+
+.docFieldVal {
+  font-weight: 600;
+}
+
+.docPhoto {
+  width: 48px;
+  height: 60px;
+  border-radius: 2px;
+  background: rgba(148, 163, 184, 0.3);
+  flex-shrink: 0;
+}
+
+/* ── Source link ── */
+.sourceLink {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--hv-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--hv-border);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.sourceLink:hover {
+  color: var(--hv-brand);
+  text-decoration-color: var(--hv-brand);
+}
+
+/* ── Data tables (Aadhaar / PAN) ── */
+.dataTable {
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dataRow {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+}
+
+.dataRow + .dataRow {
+  border-top: 1px solid var(--hv-border);
+}
+
+.dataLabel {
+  flex: 1 1 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--hv-text-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--hv-border);
+}
+
+.dataValue {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+  text-align: right;
+}
+
+/* ── Results table ── */
+.resultsTable {
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.resultRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 0 16px;
+  gap: 12px;
+}
+
+.resultRow + .resultRow {
+  border-top: 1px solid var(--hv-border);
+}
+
+.resultLabel {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--hv-text-primary);
+}
+
+.resultValue {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.resultPass {
+  color: #14804A;
+}
+
+.resultFail {
+  color: #C83532;
+}
+
+/* ── Steps section ── */
+.stepsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stepsList {
+  border: 1px solid var(--hv-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stepRow {
+  border-bottom: 1px solid var(--hv-border);
+}
+
+.stepRow:last-child {
+  border-bottom: none;
+}
+
+.stepBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.stepBtn:hover {
+  background: #F8F9FE;
+}
+
+.stepCaret {
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+  color: #616161;
+}
+
+.stepCaretOpen {
+  transform: rotate(90deg);
+}
+
+.stepName {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+  flex-shrink: 0;
+}
+
+.stepDot {
+  color: var(--hv-text-secondary);
+  flex-shrink: 0;
+  font-size: 13px;
+}
+
+.stepDesc {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--hv-text-secondary);
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.stepCount {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--hv-text-secondary);
+  flex-shrink: 0;
+}
+
+.stepExpanded {
+  padding: 8px 16px 12px 36px;
+  background: #F8F9FE;
+}
+
+.stepExpandedText {
+  font-size: 12px;
+  color: var(--hv-text-secondary);
+}
