@@ -1,0 +1,31 @@
+:root {
+  --hv-text-primary: #333333;
+  --hv-text-secondary: #5c5c5c;
+  --hv-text-tertiary: #616161;
+  --hv-brand: #554ef1;
+  --hv-success: #14804a;
+  --hv-bg: #f6f7fb;
+  --hv-surface: #ffffff;
+  --hv-row-alt: rgba(5, 5, 82, 0.02);
+  --hv-border: rgba(5, 5, 82, 0.1);
+
+  font: 14px/145% ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  letter-spacing: 0;
+  color-scheme: light;
+  color: var(--hv-text-primary);
+  background: var(--hv-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+body {
+  margin: 0;
+  overflow-x: auto;
+}

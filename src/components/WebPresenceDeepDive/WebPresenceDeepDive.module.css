@@ -1,0 +1,159 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.meta {
+  border: 1px solid var(--hv-border);
+  border-radius: 10px;
+  padding: 12px;
+  background: rgba(5, 5, 82, 0.02);
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.metaLabel {
+  font-size: 12px;
+  color: var(--hv-text-secondary);
+}
+
+.metaValue {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+  margin-bottom: 8px;
+}
+
+.kv {
+  border: 1px solid var(--hv-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.kvRow {
+  display: grid;
+  grid-template-columns: 1fr 84px;
+  gap: 12px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--hv-border);
+}
+
+.kvRow:first-child {
+  border-top: none;
+}
+
+.kvKey {
+  font-size: 12px;
+  color: var(--hv-text-secondary);
+}
+
+.kvVal {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+  text-align: right;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.evidenceTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hv-text-secondary);
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid var(--hv-border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.cardSource {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--hv-text-primary);
+}
+
+.cardTag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #b42318;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.cardSummary {
+  font-size: 12px;
+  color: var(--hv-text-primary);
+  margin-bottom: 6px;
+}
+
+.cardExcerpt {
+  font-size: 12px;
+  color: var(--hv-text-secondary);
+  background: rgba(5, 5, 82, 0.02);
+  border: 1px solid rgba(5, 5, 82, 0.06);
+  border-radius: 10px;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.cardMetrics {
+  font-size: 12px;
+  color: var(--hv-text-secondary);
+  margin-top: 6px;
+}
+
+.cardLink {
+  display: inline-flex;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--hv-brand);
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+.empty {
+  border: 1px dashed rgba(5, 5, 82, 0.25);
+  border-radius: 12px;
+  padding: 16px;
+  color: var(--hv-text-secondary);
+  background: rgba(5, 5, 82, 0.02);
+}
+
